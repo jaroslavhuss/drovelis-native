@@ -3,7 +3,8 @@
     "name": "drovelis2023",
     "slug": "drovelis2023",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
+    "scheme": "your-app-scheme",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -24,7 +25,11 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
