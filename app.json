@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "drovelis2023",
-    "slug": "drovelis2023",
+    "name": "Drovelis",
+    "slug": "Drovelis",
     "version": "1.0.0",
     "orientation": "landscape",
     "scheme": "your-app-scheme",
@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jaroslav.huss.Drovelis"
     },
     "android": {
       "adaptiveIcon": {
@@ -30,6 +31,14 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "665e4eb7-2e14-41b3-bf9e-d36654dd3b89"
+      }
+    }
   }
 }
