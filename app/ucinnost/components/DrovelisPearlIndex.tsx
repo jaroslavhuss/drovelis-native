@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View, Dimensions, Image } from 'react-native'
+import { StyleSheet, Text, View, Dimensions, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import { TouchableOpacity } from 'react-native-gesture-handler'
 import { useNavigation } from '@react-navigation/native'
 const { width, height } = Dimensions.get("screen")
 const DrovelisPearlIndex = () => {
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
         alignContent: "center",
         width,
         height: height - 170,
-        zIndex: -2
+        zIndex: 1
     },
     wrapper: {
         width: width - 300,

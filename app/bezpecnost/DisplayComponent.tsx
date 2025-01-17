@@ -5,6 +5,7 @@ import VTE from './Components/VTE';
 import Prsiska from "./Components/Prsa"
 import JatraCyp from './Components/JatraCyp';
 import MetabolickyProfil from './Components/MetabolickyProfil';
+import StudieAnalyzy from './Components/StudieAnalyzy';
 const { width, height } = Dimensions.get("screen");
 const Prsa = ({ selection, display }: any) => {
     const [selectionState, setSelectionState] = useState(0);
@@ -23,6 +24,7 @@ const Prsa = ({ selection, display }: any) => {
                     {selectionState === 2 && <Prsiska />}
                     {selectionState === 3 && <JatraCyp />}
                     {selectionState === 4 && <MetabolickyProfil />}
+                    {selectionState === 5 && <StudieAnalyzy />}
 
 
                 </SafeAreaView>
@@ -33,7 +35,7 @@ const Prsa = ({ selection, display }: any) => {
                 <TouchableOpacity style={styles.close} onPress={() => {
                     display();
                 }}><AntDesign name="closecircleo" size={60} color="#E81E75" /></TouchableOpacity>
-                {selectionState < 4 && <TouchableOpacity style={styles.next} onPress={() => {
+                {selectionState < 5 && <TouchableOpacity style={styles.next} onPress={() => {
                     setSelectionState(selectionState + 1)
                 }}><AntDesign name="caretright" size={60} color="#E81E75" /></TouchableOpacity>
                 }

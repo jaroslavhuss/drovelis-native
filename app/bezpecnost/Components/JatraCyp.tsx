@@ -16,7 +16,7 @@ const JatraCyp = () => {
                         Na rozdíl od ostatních estrogenů, <Text style={{ fontWeight: "bold" }}>E4 není metabolizován izoenzymem CYP3A4 cytochromu P450</Text> a má omezený vliv na další izoenzymy cytochromu P450. Jako takový, E4 může vykazovat ve srovnání s jinými estrogeny méně interakcí s ostatními léčivy.
                     </Text>
                     <Text style={{ fontSize: 18, marginBottom: 15 }}>
-                        Studie ukázaly, že <Text style={{ fontWeight: "bold" }}>E4 nemění aktivitu (tzn. inhibici či indukci) nejdůležitějších jaterních izoenzymů CYP cytochromu P450.</Text>
+                        Studie ukázaly, že <Text style={{ fontWeight: "bold" }}>E4 nemění aktivitu (tzn. inhibi ci či indukci) nejdůležitějších jaterních izoenzymů CYP cytochromu P450.</Text>
                     </Text>
 
                     <Image source={require("../../../assets/icon_purple.png")} style={{

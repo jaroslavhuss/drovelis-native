@@ -161,7 +161,7 @@ const Screen1 = () => {
   return (
     <Layout>
       <Heading heading="Bezpečnost" />
-      <View style={{ flexDirection: "row", justifyContent: "space-evenly", marginTop: 100 }}>
+      <View style={{ flexDirection: "row", marginTop: 100, flexWrap: "wrap", maxWidth: 700, gap:30, alignSelf: "center" }}>
         <TouchableOpacity onPress={() => {
           setDisplayComponent(true);
           setTheSeleciton(1);
@@ -190,6 +190,14 @@ const Screen1 = () => {
           setTheSeleciton(4);
         }} style={{ position: "relative", justifyContent: "center", alignItems: "center", margin: 5 }}>
           <Text style={styles.textWindow}>Metabolický{"\n"}profil</Text>
+          <Animated.Image style={{ width: 140, height: 190, opacity: window4 }} source={require("../../assets/window_bez_kridla.png")} />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => {
+          setDisplayComponent(true);
+          setTheSeleciton(5);
+        }} style={{ position: "relative", justifyContent: "center", alignItems: "center", margin: 5 }}>
+          <Text style={styles.textWindow}>Studie,{"\n"}analýzy</Text>
           <Animated.Image style={{ width: 140, height: 190, opacity: window4 }} source={require("../../assets/window_bez_kridla.png")} />
         </TouchableOpacity>
 
@@ -222,6 +230,8 @@ const styles = StyleSheet.create({
     color: "#d9326f",
     fontSize: 15,
     textAlign: "center"
-
+  },
+  child:{
+    
   }
 });
