@@ -13,12 +13,20 @@ const StudieAnalyzy = () => {
                         padding: 10,
                         fontFamily: "Museo",
                     }}>
-                        <Text style={{ fontWeight: "bold" }}>Studie a analýzy</Text>
+                        <Text style={{ fontWeight: "bold" }}>Předregistrační studie Drovelis</Text>
                     </Text>
-                    <Image source={require("../../../assets/vte_new_1.png")} style={{
+                    <Image source={require("../../../assets/vte_analyza.png")} style={{
                         resizeMode: "contain",
                         width: 1200,
-                        height: 450,
+                        height: 740,
+                        alignSelf: "center",
+                        marginTop: 20,
+                        marginBottom: 20
+                    }} />
+                    <Image source={require("../../../assets/vte_analyza_2.png")} style={{
+                        resizeMode: "contain",
+                        width: 1200,
+                        height: 550,
                         alignSelf: "center",
                         marginTop: 20,
                         marginBottom: 20
@@ -28,9 +36,10 @@ const StudieAnalyzy = () => {
 
                     <Text style={{
                         marginBottom: 20, marginTop: 30, color: "#d9326f",
-                        fontSize: 25,
+                        fontSize: 35,
                         padding: 10,
                         fontFamily: "Museo",
+
                     }}>
                         <Text style={{ fontWeight: "bold" }}>Analýza farmakovigilančních dat z databáze EudraVigilance</Text>
                     </Text>
@@ -39,18 +48,18 @@ const StudieAnalyzy = () => {
                         flexDirection: "row", gap: 10, width: "80%", alignSelf: "center", justifyContent: "flex-start", alignItems: "flex-start", alignContent: "flex-start"
                     }}>
                         <View><Image source={require("../../../assets/letadlo_bullet.png")} /></View>
-                        <View><Text>Zhodnocení rizika žilní tromboembolie (VTE) u kombinované perorální antikoncepce (COC) s přirozenými estrogeny E2 a E4 vůči COC se syntetickým estrogenem (EE) a DRSP only</Text></View>
+                        <View><Text style={{fontSize:18}}>Zhodnocení rizika žilní tromboembolie (VTE) u kombinované perorální antikoncepce (COC) s přirozenými estrogeny E2 a E4 vůči COC se syntetickým estrogenem (EE) a DRSP only</Text></View>
                     </View>
                     <View style={{
                         flexDirection: "row", gap: 10, justifyContent: "center", width: "80%", alignItems: "center", marginTop: 10
                     }}>
                         <View><Image source={require("../../../assets/letadlo_bullet.png")} /></View>
-                        <View><Text>Zpracovává všechna data za období leden 2004 - červenec 2024</Text></View>
+                        <View><Text style={{fontSize:18}}>Zpracovává všechna data za období leden 2004 - červenec 2024</Text></View>
                     </View>
                     <Image source={require("../../../assets/new_tabulka_antikoncepce.png")} style={{
                         resizeMode: "contain",
                         width: 1200,
-                        height: 450,
+                        height: 600,
                         alignSelf: "center",
                         marginTop: 50,
                         marginBottom: 20
@@ -79,34 +88,33 @@ const StudieAnalyzy = () => {
                             flexDirection: "row", gap: 10, justifyContent: "center", width: "80%", alignItems: "center", marginTop: 10, alignSelf: "center"
                         }}>
                             <View><Image source={require("../../../assets/letadlo_bullet.png")} /></View>
-                            <View><Text>COC obsahující přirozené estrogeny vykazují významně nižší proporcionální míru hlášení tromboticých příhod ve srovnání s COC na bázi EE</Text></View>
+                                      <View><Text style={{fontSize:18}}>COC obsahující přirozené estrogeny vykazují významně nižší proporcionální míru hlášení tromboticých příhod ve srovnání s COC na bázi EE</Text></View>
                         </View>
                         <View style={{
                             flexDirection: "row", gap: 10, justifyContent: "center", width: "80%", alignItems: "center", marginTop: 10, alignSelf: "center"
                         }}>
                             <View><Image source={require("../../../assets/letadlo_bullet.png")} /></View>
-                            <View><Text>E4/DRSP vykazoval nejnižší míru hlášení, podobně jako přípravky obsahující DRSP only</Text></View>
+                                      <View><Text style={{fontSize:18}}>E4/DRSP vykazoval nejnižší míru hlášení, podobně jako přípravky obsahující DRSP only</Text></View>
                         </View>
                     </View>
-                    <Text style={{
-                        marginTop: 30, color: "#d9326f",
-                        fontSize: 25,
-                        padding: 10,
-                        fontFamily: "Museo",
-                    }}>
-                        <Text style={{ fontWeight: "bold" }}>Graf a závěr</Text>
-                    </Text>
+           
                     <Image source={require("../../../assets/last_table.png")} style={{
                         resizeMode: "contain",
                         width: 1200,
-                        height: 450,
+                        height: 650,
                         alignSelf: "center",
                         marginTop: 20,
-                        marginBottom: 20
+                        marginBottom: 200
                     }} />
+                    <Text>{"\n"}</Text>
+                    <Text>{"\n"}</Text>
+                    <Text>{"\n"}</Text>
+                    <Text>{"\n"}</Text>
+                    <Text>{"\n"}</Text>
+                    <Text>{"\n"}</Text>
                 </View>
             </View>
-            <Text style={{ marginBottom: 2000 }}></Text>
+            <Text style={{ marginBottom: 2800 }}></Text>
         </ScrollView >
     )
 }
