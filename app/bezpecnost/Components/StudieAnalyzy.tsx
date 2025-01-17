@@ -43,9 +43,10 @@ const StudieAnalyzy = () => {
                     }}>
                         <Text style={{ fontWeight: "bold" }}>Analýza farmakovigilančních dat z databáze EudraVigilance</Text>
                     </Text>
+              
 
                     <View style={{
-                        flexDirection: "row", gap: 10, width: "80%", alignSelf: "center", justifyContent: "flex-start", alignItems: "flex-start", alignContent: "flex-start"
+                        flexDirection: "row", gap: 10, width: "90%", alignSelf: "center", justifyContent: "flex-start", alignItems: "flex-start", alignContent: "flex-start"
                     }}>
                         <View><Image source={require("../../../assets/letadlo_bullet.png")} /></View>
                         <View><Text style={{fontSize:18}}>Zhodnocení rizika žilní tromboembolie (VTE) u kombinované perorální antikoncepce (COC) s přirozenými estrogeny E2 a E4 vůči COC se syntetickým estrogenem (EE) a DRSP only</Text></View>
