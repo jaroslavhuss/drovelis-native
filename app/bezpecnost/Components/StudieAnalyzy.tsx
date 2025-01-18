@@ -105,8 +105,12 @@ const StudieAnalyzy = () => {
                         height: 650,
                         alignSelf: "center",
                         marginTop: 20,
-                        marginBottom: 200
+               
                     }} />
+                    <Text style={{
+                        textAlign: "center",
+                        fontSize:18
+                    }}>Drovelis je bezpečnější než tzv. „zlatý standard“ EE/LNG a zároveň bezpečnější než OC s přirozenými estrogeny</Text>
                     <Text>{"\n"}</Text>
                     <Text>{"\n"}</Text>
                     <Text>{"\n"}</Text>
