@@ -27,13 +27,13 @@ const Prsa = ({ selection, display }: any) => {
 
                 {selectionState > 1 && <TouchableOpacity style={styles.back} onPress={() => {
                     setSelectionState(selectionState - 1)
-                }}><AntDesign name="caretleft" size={60} color="#E81E75" /></TouchableOpacity>}
+                }}><AntDesign name="caret-left" size={60} color="#E81E75" /></TouchableOpacity>}
                 <TouchableOpacity style={styles.close} onPress={() => {
                     display();
-                }}><AntDesign name="closecircleo" size={60} color="#E81E75" /></TouchableOpacity>
+                }}><AntDesign name="close-circle" size={60} color="#E81E75" /></TouchableOpacity>
                 {selectionState < 4 && <TouchableOpacity style={styles.next} onPress={() => {
                     setSelectionState(selectionState + 1)
-                }}><AntDesign name="caretright" size={60} color="#E81E75" /></TouchableOpacity>
+                }}><AntDesign name="caret-right" size={60} color="#E81E75" /></TouchableOpacity>
                 }
 
 

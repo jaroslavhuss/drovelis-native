@@ -20,25 +20,25 @@ const Menu = () => {
                 <Link href="/ucinnost/UcinnostMain" onPress={() => {
                     setMenu("ucinnost");
                 }} style={[styles.appleBg, currentMenu === "ucinnost" && styles.selectedMenuItem]}>
-                    <AntDesign name="linechart" size={30} color="white" />
+                    <AntDesign name="line-chart" size={30} color="white" />
                 </Link>
 
                 <Link href="/bezpecnost/BezpecnostMain" onPress={() => {
                     setMenu("bezpecnost");
                 }} style={[styles.appleBg, currentMenu === "bezpecnost" && styles.selectedMenuItem]}>
-                    <AntDesign name="Safety" size={30} color="white" />
+                    <AntDesign name="safety" size={30} color="white" />
                 </Link>
 
                 <Link href="/setrnost/SetrnostMain" onPress={() => {
                     setMenu("setrnost");
                 }} style={[styles.appleBg, currentMenu === "setrnost" && styles.selectedMenuItem]}>
-                    <AntDesign name="hearto" size={30} color="white" />
+                    <AntDesign name="heart" size={30} color="white" />
                 </Link>
 
                 <Link href="/estetrol/EstetrolMain" onPress={() => {
                     setMenu("estetrol");
                 }} style={[styles.appleBg, currentMenu === "estetrol" && styles.selectedMenuItem]}>
-                    <AntDesign name="medicinebox" size={30} color="white" />
+                    <AntDesign name="medicine-box" size={30} color="white" />
                 </Link>
 
                 <Link href="/data/Data" onPress={() => {
@@ -50,7 +50,7 @@ const Menu = () => {
                 <Link href="/spc/SPC" onPress={() => {
                     setMenu("spc");
                 }} style={[styles.appleBg, currentMenu === "spc" && styles.selectedMenuItem]}>
-                    <AntDesign name="pdffile1" size={30} color="white" />
+                    <AntDesign name="file" size={30} color="white" />
                 </Link>
             </View>
         </View>

@@ -27,7 +27,7 @@ const Pozitiva = ():ReactElement => {
               height:80,
           }}>
             <TouchableOpacity style={{paddingRight:80}} onPress={()=>setCitaceLegenda(1)}>
-                <AntDesign name="infocirlce" size={80} color="#71abc3" />
+                <AntDesign name="info-circle" size={80} color="#71abc3" />
             </TouchableOpacity>
           </View>
           {citaceLegenda===1&&<TouchableOpacity onPress={()=>setCitaceLegenda(0)} style={styles.canvas2}>
