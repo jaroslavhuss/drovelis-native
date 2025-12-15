@@ -5,12 +5,35 @@ import React, { useEffect, useState} from "react";
 import { GlobalProvider } from "../context/GlobalContext";
 import Menu from "../components/Menu";
 import { useFonts } from "expo-font";
+import { usePathname } from "expo-router";
 const _layout = () => {
   const { width, height }: { width: number; height: number } =
     Dimensions.get("screen");
   const [w, setW] = useState<number>(width);
   const [h, setH] = useState<number>(height);
-
+  const currentPath = usePathname();
+  const isAnalyticsAllowed: boolean = true;
+    const URL = "https://central.naplast.net";
+    useEffect(() => {
+    (async () => {
+      if (!isAnalyticsAllowed) return;
+      try {
+   await fetch(`${URL}/centralapp/ipad/analytics/create`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            application_name: "drovelis-native",
+            screen: currentPath,
+            event: "view",
+            content: "screen",
+            person_identifier: "unknown",
+          }),
+        });
+      } catch (error) {}
+    })();
+  }, [currentPath]);
   useEffect(() => {
     const subscription = Dimensions.addEventListener(
       "change",
